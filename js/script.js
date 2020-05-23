@@ -4,6 +4,7 @@
     let input = d.getElementById("input");
     let numbers = d.querySelectorAll(".printable");
     let reset = d.getElementById("reset");
+    let backspace = d.getElementById("backspace");
 
     equals.addEventListener("click", () => {
         input.value = eval(input.value);
