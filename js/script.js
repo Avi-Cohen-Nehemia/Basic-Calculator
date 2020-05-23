@@ -4,6 +4,7 @@
     let result = d.getElementById("result");
     let input = d.getElementById("input");
     let numbers = d.querySelectorAll(".printable");
+    let reset = d.getElementById("reset");
 
     currentResult = "";
 
@@ -13,6 +14,11 @@
         input.value = "";
     });
 
+    reset.addEventListener("click", () => {
+        currentResult = "";
+        result.textContent = "0";
+        input.value = "";
+    });
 
     numbers.forEach(number => {
         number.addEventListener('click', () => {
